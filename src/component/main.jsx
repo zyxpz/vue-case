@@ -1,13 +1,11 @@
 export default {
-	data() {
-		return {
-			age: 18,
-		};
-	},
-
+	props: ['num'],
 	render() {
 		return (
-			<div className="main">我{this.age}岁了</div>
+			<div>
+				<button>点我+1</button>
+				<button>点我-1</button>
+			</div>
 		);
 	},
 };

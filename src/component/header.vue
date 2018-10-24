@@ -1,5 +1,18 @@
 <template>
-	<header class="main-header">
-		<h1>JTodo</h1>
-	</header>;
+	<header class="header">
+		<h1>{{num}}</h1>
+	</header>
 </template>
+
+<script>
+export default {
+	props: ['num'],
+};
+</script>
+
+
+<style lang="less">
+	.header {
+		text-align: center;
+	}
+</style>
