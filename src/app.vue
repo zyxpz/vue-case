@@ -1,7 +1,7 @@
 <template>
 <div id="app">
 <Header v-bind:num=num></Header>
-<Main v-bind:num=num></Main>
+<Main v-bind:num=num @addNum='addNum' @reduceNum='reduceNum'></Main>
 </div>
 </template>;
 <script>
@@ -14,6 +14,14 @@ export default {
 			num: 20,
 		};
 	},
+	methods: {
+		addNum(num) {
+			this.num = num;
+		},
+		reduceNum(num) {
+			this.num = num;
+		}
+	},
 	components: {
 		Header,
 		Main,
@@ -24,10 +32,10 @@ export default {
 <style lang="less">
 	#app {
 		Header {
-			color: red
+			color: red;
 		}
 		.main {
-			color: blue
+			color: blue;
 		}
 	}
 </style>
