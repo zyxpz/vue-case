@@ -6,13 +6,16 @@
 
 <script>
 export default {
-	props: ['num'],
+  props: ['num'],
+  data() {
+    return {};
+  },
 };
 </script>
 
 
 <style lang="less">
-	.header {
-		text-align: center;
-	}
+.header {
+  text-align: center;
+}
 </style>

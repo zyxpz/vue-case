@@ -20,7 +20,7 @@ export default {
 		},
 		reduceNum(num) {
 			this.num = num;
-		}
+		},
 	},
 	components: {
 		Header,
