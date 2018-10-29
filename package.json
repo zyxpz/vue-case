@@ -4,7 +4,8 @@
   "description": "vue框架案例",
   "main": "index.js",
   "entry": {
-    "chat": "./src/index.js"
+    "index": "./src/case1/index.js",
+    "index2": "./src/case2/index.js"
   },
   "scripts": {
     "dev": "cross-env NODE_ENV=development dora --plugins webpack,proxy",
@@ -37,6 +38,7 @@
     "vue-html-loader": "^1.2.4",
     "vue-loader": "^7.5.3",
     "vue-template-compiler": "^2.5.17",
+    "vuex": "^3.0.1",
     "webpack": "^3.12.0"
   },
   "lint-staged": {
@@ -47,5 +49,8 @@
   },
   "pre-commit": [
     "lint"
-  ]
+  ],
+  "dependencies": {
+    "mido-less-general": "^1.0.0"
+  }
 }
