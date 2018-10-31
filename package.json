@@ -5,7 +5,8 @@
   "main": "index.js",
   "entry": {
     "index": "./src/case1/index.js",
-    "index2": "./src/case2/index.js"
+    "index2": "./src/case2/index.js",
+    "index3": "./src/case3/index.js"
   },
   "scripts": {
     "dev": "cross-env NODE_ENV=development dora --plugins webpack,proxy",
@@ -51,6 +52,7 @@
     "lint"
   ],
   "dependencies": {
-    "mido-less-general": "^1.0.0"
+    "mido-less-general": "^1.0.0",
+    "vue-router": "^3.0.1"
   }
 }
